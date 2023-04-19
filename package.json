@@ -1,0 +1,87 @@
+{
+  "name": "r-boot",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.3.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^12.20.10",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "antd": "^4.16.0",
+    "axios": "^0.21.1",
+    "babel-plugin-import": "^1.13.3",
+    "classnames": "^2.3.1",
+    "craco-less": "^1.20.0",
+    "dotenv-cli": "^4.0.0",
+    "echarts": "^5.2.1",
+    "js-cookie": "^2.2.1",
+    "less": "^4.1.1",
+    "less-loader": "^5.0.0",
+    "lodash": "^4.17.21",
+    "rc-animate": "^3.1.1",
+    "rc-queue-anim": "^1.8.5",
+    "rc-texty": "^0.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "spark-md5": "^3.0.2",
+    "typescript": "^4.2.4",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start:mock": "dotenv -e .env.mock craco start",
+    "start": "dotenv -e .env.develop craco start",
+    "start:test": "dotenv -e .env.test craco start",
+    "build:develop": "dotenv -e .env.develop craco build",
+    "build:test": "dotenv -e .env.test craco build",
+    "build:pre": "dotenv -e .env.pre craco build",
+    "build:pro": "dotenv -e .env.pro craco build",
+    "lint-fix": "eslint --fix --ext .js,.ts,.tsx src/",
+    "test": "craco test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^2.2.6",
+    "@types/lodash": "^4.14.172",
+    "@types/react-loadable": "^5.5.5",
+    "@types/react-router": "^5.1.14",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/spark-md5": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "mockjs": "^1.1.0",
+    "prettier": "^1.9.1",
+    "prettier-eslint": "^10.1.0"
+  }
+}
